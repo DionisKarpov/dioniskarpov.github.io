@@ -1,0 +1,307 @@
+* {
+  font-family: "Open Sans";
+  font-weight: 100;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  /*background-image: url("../images/background-3.jpg"); */
+  background: linear-gradient(200deg, #226d99 15%, #55ee77 100%);
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  -webkit-animation: gradient-animation 8s ease-out infinite;
+  animation: gradient-animation 8s ease-out infinite;
+}
+
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 30% 70%;
+  }
+  50% {
+    background-position: 90% 10%;
+  }
+  100% {
+    background-position: 30% 70%;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 30% 70%;
+  }
+  50% {
+    background-position: 90% 10%;
+  }
+  100% {
+    background-position: 30% 70%;
+  }
+}
+
+header .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #333;
+}
+
+header .info .contacts {
+  margin-top: -2rem;
+}
+
+header .info .contacts .mail a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .info .contacts .mail a:hover {
+  color: black;
+  text-shadow: 0 0 1px #262626;
+}
+
+header .info .photo {
+  text-align: center;
+  line-height: 1rem;
+  margin-top: 1rem;
+}
+
+header .info .photo img {
+  width: 120px;
+  border-radius: 120px;
+  border: 1px solid #999;
+}
+
+header .info .photo h4 {
+  font-size: 0.9rem;
+}
+
+header .info .photo ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+header .info .photo ul li {
+  list-style-type: none;
+  padding: 0 .5rem;
+}
+
+header .info .photo ul #LinkedIn:hover {
+  fill: #0077B5;
+}
+
+header .info .photo ul #Facebook:hover {
+  fill: #4267b2;
+}
+
+header .info .photo ul #Instagram:hover {
+  fill: url(#MyGradient);
+}
+
+header .info .photo ul #Youtube:hover {
+  fill: #ff0000;
+}
+
+header .social h2 {
+  text-align: center;
+}
+
+header .portfolio h2, header .portfolio h3 {
+  text-align: center;
+}
+
+header .portfolio #GitHub {
+  width: 200px;
+  height: 60px;
+}
+
+header .portfolio #GitHub:hover {
+  fill: #6e5494;
+}
+
+main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem 3rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.container .hello,
+.container .education {
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+}
+
+.container .education ul li #date {
+  font-size: 14px;
+  margin-top: -1rem;
+  color: #999;
+}
+
+.skills {
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+}
+
+.skills ul {
+  line-height: 2rem;
+}
+
+.skills ul .elements {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: start;
+  ralign-items: center;
+}
+
+.skills ul .elements .image {
+  margin: 0.5rem 1rem 1rem 0;
+}
+
+.skills ul .elements .image img {
+  height: 40px;
+}
+
+.experience {
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+}
+
+.experience .main-ul #line-1:before {
+  content: "";
+  position: absolute;
+  moz-height: 16.7rem;
+  height: 16.4rem;
+  width: 5px;
+  margin-left: -12px;
+  border-left: 1px solid #ccc;
+  margin-top: 1.3rem;
+}
+
+.experience .main-ul #line-2:before {
+  content: "";
+  position: absolute;
+  moz-height: 3.4rem;
+  height: 3.3rem;
+  width: 5px;
+  margin-left: -12px;
+  border-left: 1px solid #ccc;
+  margin-top: 1.3rem;
+}
+
+.experience .main-ul #line-3:before {
+  content: "";
+  position: absolute;
+  moz-height: 3.4rem;
+  height: 3.3rem;
+  width: 5px;
+  margin-left: -12px;
+  border-left: 1px solid #ccc;
+  margin-top: 1.3rem;
+}
+
+.experience .main-ul li a {
+  text-decoration: none;
+  color: #6e5494;
+}
+
+.experience .main-ul h3 a {
+  text-decoration: none;
+  color: #6e5494;
+  font-weight: 400;
+}
+
+.experience .main-ul h3 a:hover {
+  color: #564273;
+  text-shadow: 0 0 2px #bdafd2;
+}
+
+.experience .main-ul .dates-work {
+  font-size: 14px;
+  margin-top: -1rem;
+  color: #999;
+}
+
+.full-container {
+  margin: 3rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+}
+
+.full-container .hobbies ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.full-container .hobbies ul li .interes {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #d9b38c;
+  border-radius: 100px;
+}
+
+.full-container .hobbies ul li .interes img {
+  width: 60px;
+  height: 60px;
+  margin: 1.25rem 0;
+}
+
+.markups ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  text-align: center;
+  padding: 2rem 0;
+  color: #6e5494;
+}
+
+.markups ul a {
+  text-decoration: none;
+  color: #6e5494;
+}
+
+.markups ul a img {
+  width: 90%;
+  margin-bottom: -1rem;
+  border: 1px solid #ccc;
+}
+
+.markups ul a:hover {
+  color: #564273;
+  text-shadow: 0 0 2px #bdafd2;
+}
+
+.markups ul a:hover img {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+/*# sourceMappingURL=main.css.map */
