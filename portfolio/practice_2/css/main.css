@@ -1,0 +1,615 @@
+@import url("../fonts/fonts.css");
+
+* {
+	transition: all .3s ease;
+}
+
+html {
+	font-family: 'Segoe WP';
+}
+
+body {
+	max-width: 100%;
+	width: auto;
+	margin: 0 auto;
+}
+
+main {
+	max-width: 80%;
+	margin: 0 auto;
+	padding-top: 5rem;
+}
+
+.banner-back {
+	background-image: url(../images/back-banner.png);
+	max-width: 100%;
+	width: auto;
+	margin: 0 auto;
+}
+
+.head-banner {
+	background-image: url(../images/header-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	width: auto;
+	margin: 0 auto;
+}
+
+.head {
+	max-width: 80%;
+	width: auto;
+	margin: 0 auto;
+	height: 488px;
+}
+
+.head-banner nav {
+	display: inline-block;
+	float: right;
+	margin: 1rem 1rem 1rem 1rem;
+	width: 55%;
+}
+
+.head-banner ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.head-banner li {
+	display: inline-block;
+	padding: 1rem;
+}
+
+.head-banner li a {
+	font-family: 'Segoe WP';
+	font-weight: 100;
+	font-size: 22.6px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.head-banner li a:hover {
+	color: #ddd;
+}
+
+.logo  {
+	display: inline-block;
+	margin: 1rem 1rem;
+	font-size: 118.5px;
+	color: #fff;
+	font-weight: 100;
+	font-family: 'MrsEavesItalic';
+	opacity: 0.5;
+}
+
+.intro {
+	padding: 0em 0em 0em 15em;
+	color: #fff;
+	font-size: 33px;
+	font-weight: 100;
+}
+
+.intro h1 {
+	margin-bottom: -2rem;
+}
+
+.intro p {
+	font-size: 33px;
+	margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.intro button {
+	border: 2px solid #333;
+	padding: 0.2rem 1rem;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 100;
+	margin-top: 2rem;
+	background: linear-gradient(to right, rgba(89,140,115,1) 0%, rgba(55,126,145,1) 100%);
+}
+
+.intro button:hover {
+	border: 2px solid #114466;
+	background-color: #185f6f;
+	color: #ccc;
+}
+
+#icon {
+	position: absolute;
+    margin: 13rem 0rem 0rem -13rem;
+}
+
+.tabs {
+	max-width: 100%;
+	padding-top: 0px;
+	white-space: nowrap;
+}
+
+/* вкладки */
+
+.tabs>section {
+	display: none;
+	padding: 4rem;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+}
+.tabs>section>p {
+	font-family: 'Segoe WP Semilight';
+	font-weight: 100;
+	margin: 0rem 0rem 0rem 0rem;
+	line-height: 1.5;
+	color: #383838;
+	font-size: 14px;
+	padding-bottom: 1rem;
+}
+
+.tabs>section>h1 {
+	font-size: 2rem;
+	margin: 1rem 0rem 2rem 0rem;
+	line-height: 1.5;
+	color: #383838;
+
+}
+
+.tabs>input {
+	display: none;
+
+}
+
+.tabs>label {
+	display: inline-block;
+	padding: 2rem 0rem 3rem 0rem;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border-radius: 3px 3px 0 0;
+	width: 24.65%;
+}
+
+#tab-1 , #tab-2 , #tab-3 , #tab-4 {
+	max-width: 25%;
+	width: auto;
+}
+
+.tabs img {
+	max-width: 100%;
+	width: auto;
+}
+
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+
+.tabs>input:checked+label {
+	color: #555;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	margin: 0 0 -1px 0px;
+	box-shadow: 0 -2px 2px #bbb;
+}
+
+.tabs h1 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 0rem;
+}
+
+.tabs h2 {
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 0.9rem;
+}
+
+#tab-1:checked~#content-tab1,
+#tab-2:checked~#content-tab2,
+#tab-3:checked~#content-tab3,
+#tab-4:checked~#content-tab4 {
+	display: block;
+	box-shadow: 0 0 2px #bbb;
+	white-space: normal;
+}
+/* вкладки */
+
+.ipad {
+	display: block;
+	margin: 0 auto;
+}
+
+.screen-us {
+	display: flex;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	max-width: 100%;
+}
+
+.screen-us img {
+	box-shadow: 0px 0px 16px #888;
+	width: 37%;
+	height: 40%;
+}
+
+.why-choose-us {
+	padding-left: 4rem;
+	display: inline;
+	float: right;
+	max-width: 55%;
+	margin-top: -1rem;
+	color: #4f4f4f;
+}
+
+.why-choose-us p {
+	margin: 1rem 1rem 1rem 2.5rem;
+	font-size: 32px;
+}
+
+.why-choose-us li {
+	list-style-type: none;
+	margin-bottom: 0.5rem;
+	list-style-image: url(../images/shape.png);
+
+}
+
+hr {
+	border: 1px solid #e5e5e5;
+	margin: 2rem 0rem 2rem 0rem;
+}
+
+.login-subscribe {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.member {
+	background-color: #ff6633;
+	padding: 1rem 1rem 1rem 1rem;
+	border-radius: 3px;
+	width: 44%;
+}
+
+.login-subscribe p {
+	font-size: 34px;
+	margin-top: 0.1rem;
+	color: #fff;
+	font-weight: 100;
+}
+
+.btn-log {
+	background: #444444;
+	border: 0;
+	padding: 0.5rem 1rem;
+	color: #fff;
+	font-weight: 100;
+}
+
+input {
+	font-family: 'Segoe WP Light';
+	border: 0;
+	padding: 0.4rem 0.2rem;
+	width: 35%;
+	background-color: #e8e8e8;
+}
+
+.subscribe {
+	background-color: #01d3f3;
+	padding: 1rem 1rem 1rem 1rem;
+	border-radius: 3px;
+	width: 45%;
+}
+
+.subscribe input {
+	padding: 0.4rem 0.2rem;
+	text-align: left;
+	width: 65%;
+}
+
+.btn-subscribe {
+	float: right;
+	color: #fff;
+	background: #029bb1;
+	border: 0;
+	padding: 0.5rem 1rem;
+}
+
+footer {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	height: auto;
+	background-image: url(../images/footer-background.png);
+}
+
+.footer-tabes {
+	display: flex;
+	justify-content: space-between;
+	max-width: 80%;
+	color: #fff;
+	margin: 0 auto;
+	padding-top: 0.8rem;
+	font-weight: 200;
+}
+
+.footer-tab-1 {
+	display: inline-block;
+	width: 20%;
+ }
+
+.footer-tabes nav ul li {
+	display: block;
+	padding: 0rem;
+	margin-left: -2.5rem;
+}
+
+.footer-tabes nav ul li a {
+	text-decoration: none;
+	color: #b3b2b0;
+	font-size: 12px;
+}
+
+.footer-tabes li a:hover {
+	color: #ddd;
+}
+
+.footer-tab-2 {
+	display: inline-block;
+	width: 20%;
+ }
+
+
+.footer-tab-3 {
+	display: inline-block;
+	width: 25%;
+}
+
+.footer-tab-3 p {
+	font-size: 13px;
+	color: #b3b2b0;
+}
+
+strong {
+	width: 15%;
+	font-weight: 900;
+}
+
+footer .logo {
+	margin: 2rem 5rem;
+}
+
+.author {
+	font-size: 15px;
+	font-family: 'Segoe WP';
+	color: #fff;
+	font-weight: 100;
+}
+
+	.head input[type="checkbox"] {
+    display: none;
+}
+
+	.head nav label {
+    border-bottom: 17px double #fff;
+    border-top: 6px solid #fff;
+    content: "";
+    height: 5px;
+    width: 30px;
+}
+	.head nav label:hover{
+    border-bottom: 17px double #ddd;;
+    border-top: 6px solid #ddd;
+}
+
+@media screen and (max-width: 1000px) {
+
+	main {
+		max-width: 90%;
+	}
+
+	.head-banner nav {
+		margin: 1rem 0rem 0rem 0rem;
+	}
+
+	.head-banner li {
+		padding: 0.5rem;
+	}
+
+	.head {
+		max-width: 90%;
+	}
+
+	#icon {
+		display: none;
+	}
+
+	.logo {
+		margin: 0;
+		font-size: 100px;
+	}
+
+	.intro {
+		padding: 0;
+		text-align: center;
+	}
+
+	.tabs h1 {
+		display: none;
+	}
+
+	.tabs h2 {
+		display: none;
+	}
+
+	.screen-us {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		text-align: center;
+}
+
+	.screen-us img {
+		width: auto;
+		max-width: 100%;
+	}
+
+	.why-choose-us {
+		max-width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.subscribe, .member {
+		padding: 1rem 1rem 1rem 1rem;
+		width: 45%;
+	}
+
+	.login-subscribe p {
+		line-height: normal;
+		margin-top: 0rem;
+		font-size: 25px;
+	}
+
+	input {
+		display: block;
+		margin: 0.5rem 0rem;
+		width: 98%;
+	}
+
+	.subscribe input {
+		width: 98%;
+	}
+
+	.btn-subscribe {
+		float: none;
+	}
+
+	footer .logo {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.login-subscribe {
+		display: block;
+	}
+
+	.member {
+		width: 80%;
+		margin: 2rem auto;
+	}
+
+	.subscribe {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.logo {
+		font-size: 90px;
+	}
+
+    .head nav label {
+        display: inline-block;
+        transition: all .3s ease;
+    }
+    .head nav > ul {
+        display: none;
+        transition: all .3s ease;
+    }
+
+	.head nav ul li {
+		padding: 0.5rem 3.6rem 0.5rem 0;
+	}
+
+    .head input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+        float: right;
+        margin: -0.3rem auto;
+        transition: all .3s ease;
+        background-color: rgba(0,0,0,0.9);
+    }
+
+
+
+    .head-banner nav {
+    	margin: 2rem 2rem 0rem 0rem;
+    	display: inline-block;
+    	width: 200px;
+    	position: fixed;
+		top: 0;
+		right: 0;
+    	text-align: right;
+     	transition: all .3s ease;
+    }
+
+    .tabs > label {
+    	width: 24.3%;
+    }
+
+    .intro {
+    	margin-top: 6rem;
+    	font-size: 28px;
+    }
+
+	.intro button {
+		margin: 0;
+	}
+
+	.login-subscribe {
+		display: block
+
+	}
+
+	.member {
+		width: 90%;
+		margin: 2rem auto;
+	}
+
+	.subscribe {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+    footer .logo {
+    	display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+	.head input[type="checkbox"]:checked ~ label + ul {
+    	display: block;
+    	margin-bottom: 10rem;
+    }
+
+    .intro {
+    	margin: 0 auto;
+    }
+
+    .tabs > label {
+    	width: 24.1%;
+    }
+
+	.footer-tabes {
+		display: block;
+	}
+
+    .footer-tab-1 {
+    	display: inline-block;
+    	width: 45%
+    }
+
+    .footer-tab-2 {
+    	display: inline-block;
+    	width: 45%
+    }
+
+    .footer-tab-3 {
+    	display: block;
+    	width: 100%;
+    	padding-bottom: 1rem;
+    }
+}

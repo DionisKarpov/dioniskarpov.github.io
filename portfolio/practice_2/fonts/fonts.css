@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'MrsEavesItalic';
+	src: url('MrsEavesItalic.eot');
+	src: url('MrsEavesItalic.eot?#iefix') format('embedded-opentype'),
+		url('MrsEavesItalic.woff') format('woff'),
+		url('MrsEavesItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe WP';
+	src: url('SegoeWP-Light.eot');
+	src: url('SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+		url('SegoeWP-Light.woff') format('woff'),
+		url('SegoeWP-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe WP N';
+	src: url('SegoeWPN.eot');
+	src: url('SegoeWPN.eot?#iefix') format('embedded-opentype'),
+		url('SegoeWPN.woff') format('woff'),
+		url('SegoeWPN.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe WP Light';
+	src: url('SegoeWP-SemiLight.eot');
+	src: url('SegoeWP-SemiLight.eot?#iefix') format('embedded-opentype'),
+		url('SegoeWP-SemiLight.woff') format('woff'),
+		url('SegoeWP-SemiLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
