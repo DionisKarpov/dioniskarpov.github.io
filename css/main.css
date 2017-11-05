@@ -10,14 +10,20 @@ body {
 
 header {
   /*background-image: url("../images/background-3.jpg"); */
-  background: linear-gradient(200deg, #226d99 15%, #55ee77 100%);
+  background: linear-gradient(200deg, #226d99 25%, #55ee77 100%);
   background-size: 150% 150%;
   background-repeat: no-repeat;
   width: 100%;
   height: 300px;
   margin: 0 auto;
-  -webkit-animation: gradient-animation 8s ease-out infinite;
-  animation: gradient-animation 8s ease-out infinite;
+  -webkit-animation: gradient-animation 7s linear infinite;
+  animation: gradient-animation 7s linear infinite;
+}
+
+@media screen and (max-width: 716px) {
+  header {
+    height: 400px;
+  }
 }
 
 @-webkit-keyframes gradient-animation {
@@ -55,24 +61,103 @@ header .info {
   color: #333;
 }
 
+@media screen and (max-width: 716px) {
+  header .info {
+    grid-template-columns: 1fr;
+  }
+}
+
 header .info .contacts {
   margin-top: -2rem;
 }
 
-header .info .contacts .mail a {
-  text-decoration: none;
-  color: #333;
+@media screen and (max-width: 716px) {
+  header .info .contacts {
+    display: none;
+  }
 }
 
-header .info .contacts .mail a:hover {
+header .info .contacts .mail a,
+header .info .contacts .phone a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  header .info .contacts .mail a,
+  header .info .contacts .phone a {
+    font-size: 16px;
+  }
+}
+
+header .info .contacts .mail a:hover,
+header .info .contacts .phone a:hover {
   color: black;
   text-shadow: 0 0 1px #262626;
+}
+
+@media screen and (max-width: 800px) {
+  header .info .contacts {
+    line-height: 1.5rem;
+  }
 }
 
 header .info .photo {
   text-align: center;
   line-height: 1rem;
   margin-top: 1rem;
+}
+
+header .info .photo .github-hide,
+header .info .photo .mail,
+header .info .photo .phone {
+  display: none;
+}
+
+header .info .photo .github-hide #GitHub-Hide,
+header .info .photo .mail #GitHub-Hide,
+header .info .photo .phone #GitHub-Hide {
+  width: 100px;
+  height: 35px;
+  margin: 0.8rem 0 -0.2rem 0;
+}
+
+header .info .photo .github-hide #GitHub-Hide:hover,
+header .info .photo .mail #GitHub-Hide:hover,
+header .info .photo .phone #GitHub-Hide:hover {
+  fill: #6e5494;
+}
+
+header .info .photo .github-hide a,
+header .info .photo .mail a,
+header .info .photo .phone a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  header .info .photo .github-hide a,
+  header .info .photo .mail a,
+  header .info .photo .phone a {
+    font-size: 16px;
+  }
+}
+
+header .info .photo .github-hide a:hover,
+header .info .photo .mail a:hover,
+header .info .photo .phone a:hover {
+  color: black;
+  text-shadow: 0 0 1px #262626;
+}
+
+@media screen and (max-width: 716px) {
+  header .info .photo .github-hide,
+  header .info .photo .mail,
+  header .info .photo .phone {
+    display: block;
+  }
 }
 
 header .info .photo img {
@@ -82,7 +167,7 @@ header .info .photo img {
 }
 
 header .info .photo h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 header .info .photo ul {
@@ -97,23 +182,73 @@ header .info .photo ul {
 
 header .info .photo ul li {
   list-style-type: none;
-  padding: 0 .5rem;
+  padding: 0.5rem;
+}
+
+header .info .photo ul #LinkedIn {
+  width: 40px;
+  height: 40px;
 }
 
 header .info .photo ul #LinkedIn:hover {
   fill: #0077B5;
 }
 
+@media screen and (max-width: 800px) {
+  header .info .photo ul #LinkedIn {
+    width: 25px;
+  }
+}
+
+header .info .photo ul #Facebook {
+  width: 40px;
+  height: 40px;
+}
+
 header .info .photo ul #Facebook:hover {
   fill: #4267b2;
+}
+
+@media screen and (max-width: 800px) {
+  header .info .photo ul #Facebook {
+    width: 25px;
+  }
+}
+
+header .info .photo ul #Instagram {
+  width: 40px;
+  height: 40px;
 }
 
 header .info .photo ul #Instagram:hover {
   fill: url(#MyGradient);
 }
 
+@media screen and (max-width: 800px) {
+  header .info .photo ul #Instagram {
+    width: 27px;
+  }
+}
+
+header .info .photo ul #Youtube {
+  width: 45px;
+  height: 45px;
+}
+
 header .info .photo ul #Youtube:hover {
   fill: #ff0000;
+}
+
+@media screen and (max-width: 800px) {
+  header .info .photo ul #Youtube {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  header .info .photo ul {
+    margin: -1rem 0 -1rem 0;
+  }
 }
 
 header .social h2 {
@@ -131,6 +266,18 @@ header .portfolio #GitHub {
 
 header .portfolio #GitHub:hover {
   fill: #6e5494;
+}
+
+@media screen and (max-width: 800px) {
+  header .portfolio #GitHub {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  header .portfolio h2, header .portfolio h3, header .portfolio #GitHub {
+    display: none;
+  }
 }
 
 main {
@@ -158,6 +305,12 @@ main {
   color: #999;
 }
 
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .skills {
   border: 1px solid #ccc;
   padding: 1rem 2rem;
@@ -165,6 +318,7 @@ main {
 
 .skills ul {
   line-height: 2rem;
+  padding: 1rem;
 }
 
 .skills ul .elements {
@@ -172,15 +326,45 @@ main {
   max-width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: start;
-  ralign-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1320px) {
+  .skills ul .elements {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills ul .elements {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills ul .elements {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .skills ul .elements .image {
-  margin: 0.5rem 1rem 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .skills ul .elements .image img {
   height: 40px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .skills ul .elements .image img {
+    height: 35px;
+  }
+}
+
+.skills ul .git img {
+  height: 25px !important;
 }
 
 .experience {
@@ -274,6 +458,25 @@ main {
   margin: 1.25rem 0;
 }
 
+@media screen and (max-width: 800px) {
+  .full-container .hobbies ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .full-container .hobbies ul {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .full-container .hobbies {
+    text-align: center;
+  }
+}
+
 .markups ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -302,6 +505,18 @@ main {
 .markups ul a:hover img {
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
+}
+
+@media screen and (max-width: 800px) {
+  .markups ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .markups h2 {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
