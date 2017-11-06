@@ -67,10 +67,6 @@ header .info {
   }
 }
 
-header .info .contacts {
-  margin-top: -2rem;
-}
-
 @media screen and (max-width: 716px) {
   header .info .contacts {
     display: none;
@@ -97,39 +93,46 @@ header .info .contacts .phone a:hover {
   text-shadow: 0 0 1px #262626;
 }
 
-@media screen and (max-width: 800px) {
-  header .info .contacts {
-    line-height: 1.5rem;
+header .info .photo {
+  text-align: center;
+  line-height: 0.5rem;
+  margin-top: 2rem;
+}
+
+header .info .photo .github-hide {
+  display: none;
+  margin: 0 0 1rem 0;
+}
+
+header .info .photo .github-hide #GitHub-Hide {
+  width: 80px;
+  height: 25px;
+  margin: 0;
+}
+
+header .info .photo .github-hide #GitHub-Hide:hover {
+  fill: #6e5494;
+}
+
+@media screen and (max-width: 716px) {
+  header .info .photo .github-hide {
+    display: block;
   }
 }
 
-header .info .photo {
-  text-align: center;
-  line-height: 1rem;
-  margin-top: 1rem;
+header .info .photo .phone {
+  margin: 1.5rem 0 -3rem 0;
 }
 
-header .info .photo .github-hide,
+header .info .photo .mail {
+  margin: 1.5rem 0 0 0;
+}
+
 header .info .photo .mail,
 header .info .photo .phone {
   display: none;
 }
 
-header .info .photo .github-hide #GitHub-Hide,
-header .info .photo .mail #GitHub-Hide,
-header .info .photo .phone #GitHub-Hide {
-  width: 100px;
-  height: 35px;
-  margin: 0.8rem 0 -0.2rem 0;
-}
-
-header .info .photo .github-hide #GitHub-Hide:hover,
-header .info .photo .mail #GitHub-Hide:hover,
-header .info .photo .phone #GitHub-Hide:hover {
-  fill: #6e5494;
-}
-
-header .info .photo .github-hide a,
 header .info .photo .mail a,
 header .info .photo .phone a {
   text-decoration: none;
@@ -137,15 +140,13 @@ header .info .photo .phone a {
   font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
-  header .info .photo .github-hide a,
+@media screen and (max-width: 716px) {
   header .info .photo .mail a,
   header .info .photo .phone a {
     font-size: 16px;
   }
 }
 
-header .info .photo .github-hide a:hover,
 header .info .photo .mail a:hover,
 header .info .photo .phone a:hover {
   color: black;
@@ -153,7 +154,6 @@ header .info .photo .phone a:hover {
 }
 
 @media screen and (max-width: 716px) {
-  header .info .photo .github-hide,
   header .info .photo .mail,
   header .info .photo .phone {
     display: block;
@@ -194,7 +194,7 @@ header .info .photo ul #LinkedIn:hover {
   fill: #0077B5;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 716px) {
   header .info .photo ul #LinkedIn {
     width: 25px;
   }
@@ -209,7 +209,7 @@ header .info .photo ul #Facebook:hover {
   fill: #4267b2;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 716px) {
   header .info .photo ul #Facebook {
     width: 25px;
   }
@@ -224,7 +224,7 @@ header .info .photo ul #Instagram:hover {
   fill: url(#MyGradient);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 716px) {
   header .info .photo ul #Instagram {
     width: 27px;
   }
@@ -239,7 +239,7 @@ header .info .photo ul #Youtube:hover {
   fill: #ff0000;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 716px) {
   header .info .photo ul #Youtube {
     width: 30px;
   }
@@ -247,7 +247,7 @@ header .info .photo ul #Youtube:hover {
 
 @media screen and (max-width: 716px) {
   header .info .photo ul {
-    margin: -1rem 0 -1rem 0;
+    margin: -1rem 0 0rem 0;
   }
 }
 
@@ -303,6 +303,16 @@ main {
   font-size: 14px;
   margin-top: -1rem;
   color: #999;
+}
+
+@media screen and (max-width: 800px) {
+  .container .education h2 {
+    text-align: center;
+  }
+  .container .education ul {
+    padding: 0;
+    list-style-type: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -375,7 +385,6 @@ main {
 .experience .main-ul #line-1:before {
   content: "";
   position: absolute;
-  moz-height: 16.7rem;
   height: 16.4rem;
   width: 5px;
   margin-left: -12px;
@@ -386,7 +395,6 @@ main {
 .experience .main-ul #line-2:before {
   content: "";
   position: absolute;
-  moz-height: 3.4rem;
   height: 3.3rem;
   width: 5px;
   margin-left: -12px;
@@ -397,7 +405,6 @@ main {
 .experience .main-ul #line-3:before {
   content: "";
   position: absolute;
-  moz-height: 3.4rem;
   height: 3.3rem;
   width: 5px;
   margin-left: -12px;
@@ -425,6 +432,48 @@ main {
   font-size: 14px;
   margin-top: -1rem;
   color: #999;
+}
+
+.experience .main-ul hr {
+  display: none;
+  color: #ccc;
+  height: 1px;
+  width: 50%;
+  margin: 1rem auto;
+  background-color: #ccc;
+  border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .experience .main-ul hr {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .experience .main-ul #line-1:before,
+  .experience .main-ul #line-2:before,
+  .experience .main-ul #line-3:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .experience .main-ul #line-1:before,
+  .experience .main-ul #line-2:before,
+  .experience .main-ul #line-3:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .experience h2 {
+    text-align: center;
+  }
+  .experience ul {
+    padding: 0;
+    list-style-type: none;
+  }
 }
 
 .full-container {
