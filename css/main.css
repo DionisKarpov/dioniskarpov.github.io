@@ -484,7 +484,7 @@ main {
 
 .full-container .hobbies ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
   justify-items: center;
   -webkit-box-align: center;
