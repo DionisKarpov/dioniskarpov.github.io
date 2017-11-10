@@ -334,47 +334,30 @@ main {
 .skills ul .elements {
   display: grid;
   max-width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-items: start;
+  grid-template-columns: repeat(auto-fill, 75px);
+  justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-@media screen and (max-width: 1320px) {
-  .skills ul .elements {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .skills ul .elements {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .skills ul .elements {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .skills ul .elements .image {
   margin: 0 0 1rem 0;
+  position: relative;
 }
 
 .skills ul .elements .image img {
   height: 40px;
-}
-
-@media screen and (max-width: 1000px) and (min-width: 800px) {
-  .skills ul .elements .image img {
-    height: 35px;
-  }
+  width: 40px;
 }
 
 .skills ul .git img {
-  height: 25px !important;
+  width: 55px !important;
+  padding-top: 1.3rem;
+}
+
+.skills ul .css3 img {
+  width: 80px !important;
 }
 
 .experience {

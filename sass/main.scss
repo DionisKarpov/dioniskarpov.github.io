@@ -288,29 +288,18 @@ main {
     .elements {
       display: grid;
       max-width: 100%;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      justify-items: start;
+      grid-template-columns: repeat(auto-fill, 75px);
+      justify-items: center;
       align-items: center;
-        @media screen and (max-width: 1320px) {
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-
-        @media screen and (max-width: 480px) {
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        @media screen and (max-width: 320px) {
-          grid-template-columns: 1fr 1fr;
-        }
 
       .image {
         margin: 0 0 1rem 0;
+        position: relative;
 
         img {
           height: 40px;
-            @media screen and (max-width: 1000px) and (min-width: 800px) {
-              height: 35px;
-            }
+          width: 40px;
+
         }
 
         &:hover {}
@@ -318,7 +307,13 @@ main {
     }
       .git {
         img {
-          height: 25px!important;
+          width: 55px!important;
+          padding-top: 1.3rem;
+        }
+      }
+      .css3 {
+        img{
+          width: 80px!important;
         }
       }
   }
@@ -470,6 +465,7 @@ main {
 
         img {
           transform: scale(1.01);
+
         }
       }
     }
