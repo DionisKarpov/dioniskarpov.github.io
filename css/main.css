@@ -387,6 +387,10 @@ main {
   color: #999;
 }
 
+.experience .main-ul .position {
+  margin-top: -0.7rem;
+}
+
 .experience .main-ul hr {
   display: none;
   color: #ccc;
