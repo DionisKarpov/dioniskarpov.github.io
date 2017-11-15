@@ -8,6 +8,10 @@ class RegistrationForm extends Component {
   this.state = {
     email: ''
   };
+  super(props);
+  this.state = {
+    name: ''
+  };
 }
 
 handleSubmit() {
@@ -18,11 +22,17 @@ handleEmailChange() {
   console.log('handleEmailChange', this);
 }
 
+handleNameChange() {
+  console.log('handleNameChange', this);
+}
+
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
 
-		<input type="text" name="text"  placeholder="Name" />
+		<input type="text" name="text"  placeholder="Name" value={this.state.name}
+          onChange={this.handleNameChange}/>
 
 			<input type="email" name="email" placeholder="Email" value={this.state.email}
     			onChange={this.handleEmailChange} />
