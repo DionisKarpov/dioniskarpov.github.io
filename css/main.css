@@ -6,6 +6,8 @@
 body {
   width: 100%;
   margin: 0 auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header {
@@ -99,6 +101,30 @@ header .info .photo {
   margin-top: 2rem;
 }
 
+header .info .photo .avatar {
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+header .info .photo .avatar .child {
+  background-image: url("/images/dionis-karpov-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .info .photo .avatar .child:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 header .info .photo .github-hide {
   display: none;
   margin: 0 0 1rem 0;
@@ -108,6 +134,8 @@ header .info .photo .github-hide #GitHub-Hide {
   width: 80px;
   height: 25px;
   margin: 0;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
 }
 
 header .info .photo .github-hide #GitHub-Hide:hover {
@@ -188,6 +216,8 @@ header .info .photo ul li {
 header .info .photo ul #LinkedIn {
   width: 40px;
   height: 40px;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
 }
 
 header .info .photo ul #LinkedIn:hover {
@@ -203,6 +233,8 @@ header .info .photo ul #LinkedIn:hover {
 header .info .photo ul #Facebook {
   width: 40px;
   height: 40px;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
 }
 
 header .info .photo ul #Facebook:hover {
@@ -218,6 +250,8 @@ header .info .photo ul #Facebook:hover {
 header .info .photo ul #Instagram {
   width: 40px;
   height: 40px;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
 }
 
 header .info .photo ul #Instagram:hover {
@@ -233,6 +267,8 @@ header .info .photo ul #Instagram:hover {
 header .info .photo ul #Youtube {
   width: 45px;
   height: 45px;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
 }
 
 header .info .photo ul #Youtube:hover {
@@ -262,6 +298,8 @@ header .portfolio h2, header .portfolio h3 {
 header .portfolio #GitHub {
   width: 200px;
   height: 60px;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
 }
 
 header .portfolio #GitHub:hover {

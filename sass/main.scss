@@ -12,6 +12,7 @@ $brown: #d9b38c;
 body {
   width: 100%;
   margin: 0 auto;
+  transition: 0.3s;
 }
 
 header {
@@ -83,6 +84,25 @@ header {
       text-align: center;
       line-height: 0.5rem;
       margin-top: 2rem;
+        .avatar {
+          text-align: center;
+          width: 120px;
+          height: 120px;
+          border-radius: 120px;
+          border: 1px solid $light-gray;
+          overflow:hidden;
+          margin: 0 auto;
+            .child {
+              background-image: url('/images/dionis-karpov-1.jpg');
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              transition: .5s;
+                &:hover {
+                  transform: scale(1.3);
+                }
+            }
+        }
 
 
       .github-hide {
@@ -92,6 +112,7 @@ header {
             width: 80px;
             height: 25px;
             margin: 0;
+            transition: 0s!important;
               &:hover {
                 fill: #6e5494;
               }
@@ -152,6 +173,7 @@ header {
           #LinkedIn {
             width: 40px;
             height: 40px;
+            transition: 0s!important;
               &:hover {
                 fill: #0077B5;
               }
@@ -163,6 +185,7 @@ header {
           #Facebook {
             width: 40px;
             height: 40px;
+            transition: 0s!important;
               &:hover {
                 fill: #4267b2;
               }
@@ -174,6 +197,7 @@ header {
           #Instagram {
             width: 40px;
             height: 40px;
+            transition: 0s!important;
               &:hover {
                 fill: url(#MyGradient);
               }
@@ -185,6 +209,7 @@ header {
           #Youtube {
             width: 45px;
             height: 45px;
+            transition: 0s!important;
               &:hover {
                 fill: #ff0000;
               }
@@ -213,10 +238,10 @@ header {
     #GitHub {
       width: 200px;
       height: 60px;
-
-      &:hover {
-        fill: #6e5494;
-      }
+      transition: 0s!important;
+        &:hover {
+          fill: #6e5494;
+        }
 
       @media screen and (max-width: 800px) {
         width: 130px;
