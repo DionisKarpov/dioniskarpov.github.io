@@ -13298,6 +13298,12 @@
       _this.state = {
         email: ''
       };
+  
+      var _this = (0, _possibleConstructorReturn3.default)(this, (RegistrationForm.__proto__ || (0, _getPrototypeOf2.default)(RegistrationForm)).call(this, props));
+  
+      _this.state = {
+        name: ''
+      };
       return _this;
     }
   
@@ -13312,12 +13318,18 @@
         console.log('handleEmailChange', this);
       }
     }, {
+      key: 'handleNameChange',
+      value: function handleNameChange() {
+        console.log('handleNameChange', this);
+      }
+    }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           'form',
           { onSubmit: this.handleSubmit },
-          _react2.default.createElement('input', { type: 'text', name: 'text', placeholder: 'Name' }),
+          _react2.default.createElement('input', { type: 'text', name: 'text', placeholder: 'Name', value: this.state.name,
+            onChange: this.handleNameChange }),
           _react2.default.createElement('input', { type: 'email', name: 'email', placeholder: 'Email', value: this.state.email,
             onChange: this.handleEmailChange }),
           _react2.default.createElement('input', { id: 'message', type: 'text', placeholder: 'Sand message' }),
@@ -30168,4 +30180,4 @@
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map?8f1fa45e8082cd6c1d9c
+//# sourceMappingURL=main.js.map?826b20e3a0e880016cad
