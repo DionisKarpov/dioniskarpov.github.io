@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-image: url("/images/headre-back.jpg");
+  background-image: url("images/headre-back.jpg");
   min-height: 400px;
   background-size: cover;
   margin: 0 auto;
@@ -55,7 +55,7 @@ header .info .viber::after {
   content: "";
   width: 21px;
   height: 26px;
-  background: transparent url("/images/viber.svg") no-repeat;
+  background: transparent url("images/viber.svg") no-repeat;
   vertical-align: middle;
 }
 
@@ -212,7 +212,7 @@ main .about .factory .image.hover:after {
 }
 
 main .wrapper {
-  background-image: url("/images/wrapper-1.jpg");
+  background-image: url("images/wrapper-1.jpg");
   background-size: cover;
   height: 300px;
   background-position: center;
