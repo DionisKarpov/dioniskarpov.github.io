@@ -6,8 +6,6 @@
 body {
   width: 100%;
   margin: 0 auto;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 header {
@@ -331,31 +329,31 @@ main {
   margin-top: 3rem;
 }
 
-.container .hello,
-.container .education {
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hello,
+.education {
   border: 1px solid #ccc;
   padding: 1rem 2rem;
 }
 
-.container .education ul li #date {
+.education #date {
   font-size: 14px;
   margin-top: -1rem;
   color: #999;
 }
 
 @media screen and (max-width: 800px) {
-  .container .education h2 {
+  .education h2 {
     text-align: center;
   }
-  .container .education ul {
+  .education ul {
     padding: 0;
     list-style-type: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .container {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -369,7 +367,7 @@ main {
   padding: 1rem;
 }
 
-.skills ul .elements {
+.skills .elements {
   display: grid;
   max-width: 100%;
   grid-template-columns: repeat(auto-fill, 75px);
@@ -379,22 +377,22 @@ main {
   align-items: center;
 }
 
-.skills ul .elements .image {
+.skills .image {
   margin: 0 0 1rem 0;
   position: relative;
 }
 
-.skills ul .elements .image img {
+.skills .image img {
   height: 40px;
   width: 40px;
 }
 
-.skills ul .git img {
+.skills .git img {
   width: 55px !important;
   padding-top: 1.3rem;
 }
 
-.skills ul .css3 img {
+.skills .css3 img {
   width: 80px !important;
 }
 
@@ -530,29 +528,29 @@ main {
   color: #6e5494;
 }
 
-.markups ul a {
+.markups a {
   text-decoration: none;
   color: #6e5494;
 }
 
-.markups ul a img {
+.markups a img {
   width: 90%;
   margin-bottom: -1rem;
   border: 1px solid #ccc;
 }
 
-.markups ul a:hover {
+.markups a:hover {
   color: #564273;
   text-shadow: 0 0 2px #bdafd2;
 }
 
-.markups ul a:hover img {
+.markups a:hover img {
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
 }
 
 @media screen and (max-width: 800px) {
-  .markups ul {
+  .markups {
     grid-template-columns: 1fr;
   }
 }
