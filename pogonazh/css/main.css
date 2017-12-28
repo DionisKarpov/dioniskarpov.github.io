@@ -1,6 +1,6 @@
 * {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   font-family: 'Open Sans';
   font-weight: 100;
 }
@@ -11,11 +11,23 @@ body {
 }
 
 header {
-  background-image: url("/pogonazh/images/headre-back.jpg");
-  min-height: 400px;
+  background-image: url("/images/headre-back.jpg");
+  height: 400px;
   background-size: cover;
   margin: 0 auto;
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 230px;
+  }
 }
 
 header h1 {
@@ -34,6 +46,19 @@ header h1:hover {
   color: #00d820;
 }
 
+@media screen and (max-width: 1100px) {
+  header h1 {
+    font-size: 40px;
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
+
 header .info {
   display: inline-block;
   text-align: center;
@@ -49,14 +74,23 @@ header .info .viber {
   margin: 0;
 }
 
-header .info .viber::after {
-  display: inline-block;
-  margin: 0 0 0 .5rem;
-  content: "";
-  width: 21px;
-  height: 26px;
-  background: transparent url("/pogonazh/images/viber.svg") no-repeat;
-  vertical-align: middle;
+@media screen and (max-width: 1100px) {
+  header .info .viber {
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .info .viber {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .info .viber {
+    width: 200px;
+    text-align: left;
+  }
 }
 
 header nav {
@@ -64,9 +98,26 @@ header nav {
   float: right;
 }
 
+header nav input[type="checkbox"] {
+  display: none;
+}
+
+header nav label {
+  border-bottom: 17px double #333;
+  border-top: 6px solid #333;
+  content: "";
+  height: 5px;
+  width: 30px;
+}
+
+header nav label:hover {
+  border-bottom: 17px double #00d820;
+  border-top: 6px solid #00d820;
+}
+
 header nav li {
   display: inline-block;
-  margin: 0rem 3rem;
+  margin: 0rem 2rem;
 }
 
 header nav li a {
@@ -94,6 +145,70 @@ header nav li a:hover:after {
   width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  header nav li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  header nav li {
+    margin: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header nav li {
+    margin: 0rem .5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    margin: 1rem 1rem 0rem 0rem;
+    display: inline-block;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  header nav label {
+    display: inline-block;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  header nav ul {
+    display: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  header nav li {
+    padding: 0.5rem 1rem 0.5rem 0;
+    text-align: center;
+  }
+  header nav li a {
+    color: #fefefe;
+  }
+  header nav li a:hover {
+    color: #666;
+  }
+  header nav li a:after {
+    display: none;
+  }
+  header nav input[type="checkbox"]:checked ~ label + ul {
+    display: block;
+    margin: -5px auto;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: rgba(50, 50, 50, 0.93);
+    color: #fefefe;
+    padding: 0;
+  }
+}
+
 header .slogan {
   text-align: center;
 }
@@ -103,6 +218,27 @@ header .slogan h2 {
   line-height: 12rem;
 }
 
+@media screen and (max-width: 1100px) {
+  header .slogan h2 {
+    line-height: 10rem;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .slogan h2 {
+    line-height: 5rem;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .slogan h2 {
+    font-size: 16px;
+    line-height: 2rem;
+  }
+}
+
 main {
   margin: 2rem auto;
   color: #666;
@@ -110,9 +246,65 @@ main {
 
 main .about {
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 80%;
   height: 750px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .about {
+    max-width: 90%;
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .about {
+    max-width: 90%;
+    height: 1400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .about {
+    max-width: 90%;
+    height: 2650px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .about {
+    max-width: 90%;
+    height: 2600px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .about {
+    max-width: 90%;
+    height: 2570px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .about {
+    max-width: 90%;
+    height: 2470px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .about {
+    max-width: 90%;
+    height: 2400px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main .about {
+    max-width: 90%;
+    height: 2500px;
+  }
 }
 
 main .about p {
@@ -123,30 +315,36 @@ main .about .factory {
   height: 300px;
 }
 
-main .about .factory .image {
-  margin: 2rem 0.5rem;
+main .about .image {
+  margin: 2rem 0.3rem;
   max-width: 23%;
-  width: 100%;
   color: #000000;
   text-align: center;
   -webkit-perspective: 50rem;
   perspective: 50rem;
-  float: left;
+  display: inline-block;
 }
 
-main .about .factory .image * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+@media screen and (max-width: 800px) {
+  main .about .image {
+    max-width: 45%;
+  }
 }
 
-main .about .factory .image img {
+@media screen and (max-width: 600px) {
+  main .about .image {
+    max-width: 80%;
+    margin: 2rem auto;
+    display: block;
+  }
+}
+
+main .about .image img {
   max-width: 100%;
   vertical-align: top;
 }
 
-main .about .factory .image figcaption {
+main .about .image figcaption {
   top: 50%;
   left: 20px;
   right: 20px;
@@ -155,20 +353,28 @@ main .about .factory .image figcaption {
   z-index: 1;
 }
 
-main .about .factory .image h2,
-main .about .factory .image h4 {
+@media screen and (max-width: 600px) {
+  main .about .image figcaption {
+    position: static;
+    opacity: 1;
+    top: 100%;
+  }
+}
+
+main .about .image h2,
+main .about .image h4 {
   margin: 0;
 }
 
-main .about .factory .image h4 {
+main .about .image h4 {
   font-weight: 400;
 }
 
-main .about .factory .image i {
+main .about .image i {
   font-size: 32px;
 }
 
-main .about .factory .image:after {
+main .about .image:after {
   background-color: #ffffff;
   position: absolute;
   content: "";
@@ -186,7 +392,15 @@ main .about .factory .image:after {
   opacity: 0;
 }
 
-main .about .factory .image a {
+@media screen and (max-width: 600px) {
+  main .about .image:after {
+    -webkit-transform: none;
+    transform: none;
+    display: none;
+  }
+}
+
+main .about .image a {
   left: 0;
   right: 0;
   top: 0;
@@ -195,8 +409,8 @@ main .about .factory .image a {
   z-index: 1;
 }
 
-main .about .factory .image:hover figcaption,
-main .about .factory .image.hover figcaption {
+main .about .image:hover figcaption,
+main .about .image.hover figcaption {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
@@ -204,15 +418,31 @@ main .about .factory .image.hover figcaption {
   transition-delay: 0.2s;
 }
 
-main .about .factory .image:hover:after,
-main .about .factory .image.hover:after {
+@media screen and (max-width: 600px) {
+  main .about .image:hover figcaption,
+  main .about .image.hover figcaption {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+main .about .image:hover:after,
+main .about .image.hover:after {
   -webkit-transform: rotateX(0);
   transform: rotateX(0);
   opacity: 0.8;
 }
 
+@media screen and (max-width: 600px) {
+  main .about .image:hover:after,
+  main .about .image.hover:after {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
 main .wrapper {
-  background-image: url("/pogonazh/images/wrapper-1.jpg");
+  background-image: url("/images/wrapper-1.jpg");
   background-size: cover;
   height: 300px;
   background-position: center;
@@ -226,16 +456,40 @@ main .wrapper {
 main .wrapper .container {
   margin: 2rem auto;
   max-width: 80%;
-  background-color: #666;
+  background-color: rgba(50, 50, 50, 0.6);
   height: 200px;
   text-align: center;
-  opacity: 0.7;
+}
+
+@media screen and (max-width: 500px) {
+  main .wrapper .container {
+    max-width: 90%;
+  }
 }
 
 main .wrapper .container h2 {
   color: #fefefe;
   text-align: center;
   padding: 5rem;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .wrapper .container h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .wrapper .container h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main .wrapper .container h2 {
+    padding: 4rem;
+  }
 }
 
 main .products {
@@ -243,26 +497,205 @@ main .products {
   max-width: 80%;
 }
 
-main .products .block h2 {
+@media screen and (max-width: 800px) {
+  main .products {
+    max-width: 90%;
+  }
+}
+
+main .products .block {
+  margin: 1rem auto;
+}
+
+main .products h2 {
   text-align: center;
 }
 
-main .products .block .block-1,
-main .products .block .block-2 {
-  display: inline;
+main .products h3 {
+  margin: 0;
 }
 
-main .products .block .block-1 {
+main .products p {
+  margin: 0.5rem;
+}
+
+main .products .block-1,
+main .products .block-2 {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+  main .products .block-1,
+  main .products .block-2 {
+    display: block;
+  }
+}
+
+main .products .img-1 {
+  background-image: url(/images/product.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
   float: left;
 }
 
-main .products .block .block-1 img {
-  width: 200px;
+@media screen and (max-width: 1000px) {
+  main .products .img-1 {
+    float: none;
+    margin: 0 auto;
+  }
 }
 
-main .products .block .block-2 {
+main .products .img-2 {
+  background-image: url(/images/product.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+@media screen and (max-width: 1000px) {
+  main .products .img-2 {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+main .products .img-3 {
+  background-image: url(/images/product.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+@media screen and (max-width: 1000px) {
+  main .products .img-3 {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+main .products .block-2 {
   width: 75%;
   float: right;
+}
+
+@media screen and (max-width: 1100px) {
+  main .products .block-2 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .products .block-2 {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+main .store {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main .store h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  main .store {
+    max-width: 90%;
+  }
+}
+
+main .contacts {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main .contacts h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  main .contacts {
+    max-width: 90%;
+  }
+}
+
+footer {
+  background-color: #333;
+  height: 60px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    height: 110px;
+  }
+}
+
+.footer-left,
+.footer-right {
+  display: inline;
+  color: #fefefe;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-left,
+  .footer-right {
+    display: block;
+  }
+}
+
+.footer-left {
+  float: left;
+  padding: 0 0 0 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-left {
+    padding: .3rem 0 0 1rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-left {
+    float: none;
+  }
+}
+
+.footer-right {
+  float: right;
+  padding: 0 3rem 0 0;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer-right a:hover {
+  color: #00d820;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-right {
+    padding: .3rem 1rem 0 0;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-right {
+    float: none;
+    padding: .1rem 1rem 0 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
