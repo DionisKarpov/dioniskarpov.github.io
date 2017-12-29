@@ -521,11 +521,29 @@ main {
 
 .markups ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
   text-align: center;
   padding: 2rem 0;
   color: #6e5494;
+}
+
+@media screen and (max-width: 1100px) {
+  .markups ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .markups ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .markups ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 .markups a {
@@ -547,12 +565,6 @@ main {
 .markups a:hover img {
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
-}
-
-@media screen and (max-width: 800px) {
-  .markups {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media screen and (max-width: 800px) {
