@@ -453,6 +453,12 @@ main .wrapper {
   padding: 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+  main .wrapper {
+    background-attachment: inherit;
+  }
+}
+
 main .wrapper .container {
   margin: 2rem auto;
   max-width: 80%;

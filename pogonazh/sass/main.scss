@@ -386,6 +386,10 @@ main {
 			box-sizing: border-box;
 			padding: 1rem;
 
+				@media screen and (max-width: 1000px) {
+					background-attachment: inherit;
+				}
+
 	.container {
 		margin: 2rem auto;
 		max-width: 80%;
