@@ -9,15 +9,17 @@ body {
 }
 
 header {
-  /*background-image: url("../images/background-3.jpg"); */
+  /*background-image: url("../images/background-4.jpg");*/
   background: linear-gradient(200deg, #226d99 25%, #55ee77 100%);
   background-size: 150% 150%;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-  margin: 0 auto;
   -webkit-animation: gradient-animation 7s linear infinite;
   animation: gradient-animation 7s linear infinite;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 716px) {
@@ -59,6 +61,10 @@ header .info {
   -ms-flex-align: center;
   align-items: center;
   color: #333;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  will-change: transform;
 }
 
 @media screen and (max-width: 716px) {
@@ -216,6 +222,7 @@ header .info .photo ul #LinkedIn {
   height: 40px;
   -webkit-transition: 0s !important;
   transition: 0s !important;
+  opacity: 0.8;
 }
 
 header .info .photo ul #LinkedIn:hover {
@@ -233,6 +240,7 @@ header .info .photo ul #Facebook {
   height: 40px;
   -webkit-transition: 0s !important;
   transition: 0s !important;
+  opacity: 0.8;
 }
 
 header .info .photo ul #Facebook:hover {
@@ -250,6 +258,7 @@ header .info .photo ul #Instagram {
   height: 40px;
   -webkit-transition: 0s !important;
   transition: 0s !important;
+  opacity: 0.8;
 }
 
 header .info .photo ul #Instagram:hover {
@@ -267,6 +276,7 @@ header .info .photo ul #Youtube {
   height: 45px;
   -webkit-transition: 0s !important;
   transition: 0s !important;
+  opacity: 0.8;
 }
 
 header .info .photo ul #Youtube:hover {
@@ -298,6 +308,7 @@ header .portfolio #GitHub {
   height: 60px;
   -webkit-transition: 0s !important;
   transition: 0s !important;
+  opacity: 0.8;
 }
 
 header .portfolio #GitHub:hover {
