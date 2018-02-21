@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 	$gray: #333;
 	$light-gray: #ccc;
 	$mid-gray: #999;
@@ -522,3 +523,542 @@ ul {
 
 }
 
+=======
+	$gray: #333;
+	$light-gray: #ccc;
+	$mid-gray: #999;
+	$link-color: #6e5494;
+	$brown: #d9b38c;
+
+	* {
+	font-family: "Open Sans";
+	font-weight: 100;
+	}
+
+	body {
+	width: 100%;
+	margin: 0 auto;
+	}
+
+	header {
+	/*background-image: url("../images/background-4.jpg");*/
+	background: linear-gradient(200deg, #226d99 25%, #55ee77 100%);
+	background-size: 150% 150%;
+	background-repeat: no-repeat;
+	animation: gradient-animation 7s linear infinite;
+	background-size: cover;
+	width: 100%;
+	height: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+
+
+
+	@media screen and (max-width: 716px) {
+		height: 400px;
+	}
+
+	@keyframes gradient-animation {
+		0% {
+		background-position: 30% 70%;
+		}
+
+		50% {
+		background-position: 90% 10%;
+		}
+
+		100% {
+		background-position: 30% 70%;
+		}
+	}
+
+	.info {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 300px 300px 300px;
+		justify-items: center;
+		align-items: center;
+		color: $gray;
+		position: relative;
+	  	top: 0px;
+	  	left: 0px;
+	  	will-change: transform;
+
+		@media screen and (max-width: 716px) {
+			grid-template-columns: 1fr;
+		}
+
+		.contacts {
+			@media screen and (max-width: 716px) {
+			display: none;
+			}
+
+		.mail,
+		.phone {
+			a {
+			text-decoration: none;
+			color: $gray;
+			font-size: 20px;
+				@media screen and (max-width: 800px) {
+				font-size: 16px;
+				}
+			&:hover {
+				color: darken($gray, 30%);
+				text-shadow: 0 0 1px darken($gray, 5%);
+			}
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+		}
+		}
+
+		.photo {
+		text-align: center;
+		line-height: 0.5rem;
+		margin-top: 2rem;
+			.avatar {
+			text-align: center;
+			width: 120px;
+			height: 120px;
+			border-radius: 120px;
+			border: 1px solid $light-gray;
+			overflow:hidden;
+			margin: 0 auto;
+				.child {
+				background-image: url('/images/dionis-karpov-1.jpg');
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+				transition: .5s;
+					&:hover {
+					transform: scale(1.3);
+					}
+				}
+			}
+
+
+		.github-hide {
+			display: none;
+			margin: 0 0 1rem 0;
+			#GitHub-Hide {
+				width: 80px;
+				height: 25px;
+				margin: 0;
+				transition: 0s!important;
+				&:hover {
+					fill: #6e5494;
+				}
+			}
+				@media screen and (max-width: 716px) {
+				display: block;
+				}
+		}
+
+		.phone {
+			margin: 1.5rem 0 -3rem 0;
+		}
+
+		.mail {
+			margin: 1.5rem 0 0 0;
+		}
+		.mail,
+		.phone {
+			display: none;
+			a {
+			text-decoration: none;
+			color: $gray;
+			font-size: 20px;
+				@media screen and (max-width: 716px) {
+				font-size: 16px;
+				}
+			&:hover {
+				color: darken($gray, 30%);
+				text-shadow: 0 0 1px darken($gray, 5%);
+			}
+			}
+			@media screen and (max-width: 716px) {
+				display: block;
+			}
+		}
+
+		img {
+			width: 120px;
+			border-radius: 120px;
+			border: 1px solid $mid-gray;
+		}
+
+		h4 {
+			font-size: 1rem;
+		}
+
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			justify-items: center;
+			align-items: center;
+			padding: 0;
+			li {
+				list-style-type: none;
+				padding: 0.5rem;
+			}
+
+			#LinkedIn {
+				width: 40px;
+				height: 40px;
+				transition: 0s!important;
+				opacity: 0.8;
+				&:hover {
+					fill: #0077B5;
+				}
+				@media screen and (max-width: 716px) {
+					width: 25px;
+				}
+			}
+
+			#Facebook {
+				width: 40px;
+				height: 40px;
+				transition: 0s!important;
+				opacity: 0.8;
+				&:hover {
+					fill: #4267b2;
+				}
+				@media screen and (max-width: 716px) {
+					width: 25px;
+				}
+			}
+
+			#Instagram {
+				width: 40px;
+				height: 40px;
+				transition: 0s!important;
+				opacity: 0.8;
+				&:hover {
+					fill: url(#MyGradient);
+				}
+				@media screen and (max-width: 716px) {
+					width: 27px;
+				}
+			}
+
+			#Youtube {
+				width: 45px;
+				height: 45px;
+				transition: 0s!important;
+				opacity: 0.8;
+				&:hover {
+					fill: #ff0000;
+				}
+				@media screen and (max-width: 716px) {
+					width: 30px;
+				}
+			}
+			@media screen and (max-width: 716px) {
+			margin: -1rem 0 0rem 0;
+			}
+		}
+		}
+	}
+
+	.social {
+		h2 {
+		text-align: center;
+		}
+	}
+
+	.portfolio {
+		h2, h3 {
+		text-align: center;
+		}
+
+		#GitHub {
+		width: 200px;
+		height: 60px;
+		transition: 0s!important;
+		opacity: 0.8;
+			&:hover {
+			fill: #6e5494;
+			}
+
+		@media screen and (max-width: 800px) {
+			width: 130px;
+		}
+		}
+
+		@media screen and (max-width: 716px) {
+			h2, h3, #GitHub {
+				display: none;
+			}
+		}
+
+	}
+	}
+
+	main {
+	max-width: 90%;
+	margin: 0 auto;
+	}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3rem 3rem;
+	margin: 0 auto;
+	margin-top: 3rem;
+
+		@media screen and (max-width: 800px) {
+			grid-template-columns: 1fr;
+		}
+}
+
+.hello,
+.education {
+	border: 1px solid $light-gray;
+	padding: 1rem 2rem;
+}
+
+.education {
+
+	#date {
+		font-size: 14px;
+		margin-top: -1rem;
+		color: #999;
+	}
+
+	@media screen and (max-width: 800px) {
+
+		h2 {
+			text-align: center;
+		}
+
+		ul {
+			padding: 0;
+			list-style-type: none;
+		}
+	}
+}
+
+
+
+.skills {
+	border: 1px solid $light-gray;
+	padding: 1rem 2rem;
+
+ul {
+	line-height: 2rem;
+	padding: 1rem;
+}
+
+.elements {
+	display: grid;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fill, 75px);
+	justify-items: center;
+	align-items: center;
+}
+
+.image {
+	margin: 0 0 1rem 0;
+	position: relative;
+
+		img {
+		height: 40px;
+		width: 40px;
+
+		}
+
+		&:hover {}
+	}
+	.git {
+		img {
+		width: 55px!important;
+		padding-top: 1.3rem;
+		}
+	}
+	.css3 {
+		img{
+		width: 80px!important;
+		}
+	}
+
+}
+
+	.experience {
+	border: 1px solid $light-gray;
+	padding: 1rem 2rem;
+
+	.main-ul {
+
+		li {
+		a {
+			text-decoration: none;
+			color: $link-color;
+		}
+		}
+
+		h3 {
+		a {
+			text-decoration: none;
+			color: $link-color;
+			font-weight: 400;
+
+			&:hover {
+			color: darken($link-color, 10%);
+			text-shadow: 0 0 2px lighten($link-color, 30%);
+			}
+		}
+		}
+
+		.dates-work {
+		font-size: 14px;
+		margin-top: -1rem;
+		color: $mid-gray;
+		}
+
+		.position {
+		margin-top: -0.7rem;
+		}
+
+		hr {
+		display: none;
+		color: $light-gray;
+		height: 1px;
+		width: 50%;
+		margin: 1rem auto;
+		background-color: $light-gray;
+		border: none;
+			@media screen and (max-width: 800px) {
+			display: block;
+			}
+
+		}
+
+		@media screen and (max-width: 1148px) {
+		#line-1,
+		#line-2,
+		#line-3 {
+			&:before {
+			display: none;
+			}
+		}
+		}
+
+		@media screen and (max-width: 800px) {
+		#line-1,
+		#line-2,
+		#line-3 {
+			&:before {
+			display: none;
+			}
+		}
+		}
+	}
+	@media screen and (max-width: 800px) {
+		h2 {
+		text-align: center;
+		}
+
+		ul {
+		padding: 0;
+		list-style-type: none;
+		}
+	}
+	}
+
+	.full-container {
+	margin: 3rem auto;
+	border: 1px solid $light-gray;
+	padding: 1rem 2rem;
+
+	.hobbies {
+		ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		list-style-type: none;
+		justify-items: center;
+		align-items: center;
+		text-align: center;
+		padding: 0;
+
+		li {
+			.interes {
+			width: 100px;
+			height: 100px;
+			border: 1px solid $brown;
+			border-radius: 100px;
+
+			img {
+				width: 60px;
+				height: 60px;
+				margin: 1.25rem 0;
+			}
+			}
+		}
+		@media screen and (max-width: 800px) {
+			grid-template-columns:1fr 1fr 1fr;
+		}
+		@media screen and (max-width: 480px) {
+			grid-template-columns:1fr;
+			text-align: center;
+		}
+		}
+		@media screen and (max-width: 480px) {
+			text-align: center;
+		}
+	}
+	}
+
+.markups {
+	ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		list-style-type: none;
+		text-align: center;
+		padding: 2rem 0;
+		color: $link-color;
+
+			@media screen and (max-width: 1100px) {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			@media screen and (max-width: 800px) {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@media screen and (max-width: 600px) {
+				grid-template-columns: 1fr;
+			}
+	}
+
+	a {
+	text-decoration: none;
+	color: $link-color;
+
+		img {
+			width: 90%;
+			margin-bottom: -1rem;
+			border: 1px solid $light-gray;
+		}
+
+		&:hover {
+			color: darken($link-color, 10%);
+			text-shadow: 0 0 2px lighten($link-color, 30%);
+
+			img {
+				transform: scale(1.01);
+
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 800px) {
+		h2 {
+			text-align: center;
+		}
+	}
+
+}
+
+>>>>>>> da58736f2e682a40f89c301964181f1426b3966b
