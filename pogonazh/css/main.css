@@ -215,7 +215,7 @@ header .slogan {
 
 header .slogan h2 {
   font-size: 36px;
-  line-height: 12rem;
+  line-height: 6rem;
 }
 
 @media screen and (max-width: 1100px) {
