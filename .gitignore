@@ -1,3 +1,3 @@
 .gitignore
 .DS_Store
-node_modules/portfolio/practice_6/
+*node_modules/*
