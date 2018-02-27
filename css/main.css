@@ -539,7 +539,7 @@ main {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .markups ul {
     grid-template-columns: 1fr 1fr;
   }
