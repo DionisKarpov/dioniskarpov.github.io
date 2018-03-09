@@ -138,11 +138,24 @@ header {
 		grid-template-columns: 500px;
 		justify-content: center;
 		margin-top: 5rem;
+
+			@media screen and (max-width: 950px) {
+				grid-template-columns: 1fr;
+			}
+
+			@media screen and (max-width: 400px) {
+				margin-top: 2rem;
+			}			
+
 	}
 
 	h2 {
 		font-weight: 400;
 		font-size: 38px;
+			
+			@media screen and (max-width: 950px) {
+				font-size: 25px;
+			}
 	}
 
 	p {
@@ -150,6 +163,10 @@ header {
 		color: $gray;
 		margin: 0 0 2rem 0;
 		line-height: 2rem;
+
+			@media screen and (max-width: 950px) {
+				font-size: 14px;
+			}
 	}
 
 	button {
@@ -168,6 +185,12 @@ header {
 			}
 			a {
 				color: #ffffff;
+			}
+
+			@media screen and (max-width: 950px) {
+				width: 110px;
+				height: 50px;
+				font-size: 12px;
 			}
 	}
 
@@ -267,16 +290,25 @@ main {
 		align-items: center;
 		text-align: center;
 		height: 400px;
+
+			img {
+				@media screen and (max-width: 600px) {
+					width: 120px;
+				}
+			}
 	}
 
 	.about h2 {
 		margin: 6rem 0 0 0;
 		font-weight: 400;
-		font-size: 30px;
+		font-size: 24px;
+
+		@media screen and (max-width: 600px) {
+			margin: 1rem 0 0 0;
+		}
 	}
 
 	.about p {
-		width: 700px;
 		color: $gray;
 		font-weight: 300;
 		line-height: 2rem;
@@ -290,6 +322,11 @@ main {
 		grid-template-columns: 1fr 1fr;
 		height: 550px;
 		background-color: $light-gray;
+
+			@media screen and (max-width: 900px) {
+				grid-template-columns: 1fr;
+				height: 500px;
+			}
 	}
 
 	.prof-skills {
@@ -305,7 +342,7 @@ main {
 
 	.prof-skills-image {
 		background-color: $mid-gray;
-		height: 550px;
+		height: 300px;
 	}
 
 	.progress,
@@ -332,6 +369,10 @@ main {
 			position: absolute;
 			top: 0;
 		}
+
+		@media screen and (max-width: 900px) {
+			display: none;
+		}
 	}
 
 	.numbers {
@@ -343,8 +384,8 @@ main {
 			}
 
 			@media screen and (max-width: 640px) {
-			height: 700px;
-		}
+				height: 700px;
+			}
 	}
 
 	.box {
@@ -397,6 +438,12 @@ main {
 			height: 400px;
 			img {
 				padding: 5rem 1rem 3rem 8rem;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			img {
+				padding: 5rem 1rem 3rem 3rem;
 			}
 		}
 
@@ -534,6 +581,22 @@ main {
 						padding: 1px 0 0 7px;
 					}
 			}
+			
+			@media screen and (max-width: 900px) {
+				height: 300px;
+				left: 0;
+				max-width: 100%;
+				margin: 2rem 0 2rem 0;
+			}
+
+			@media screen and (max-width: 400px) {
+				height: 200px;
+
+				button {
+					top: 30%;
+				}
+			}
+
 	}
 
 	.wrap-services {
@@ -679,6 +742,10 @@ a.slide_btn {
 				margin: 0;
 				font-size: 24px;
 				letter-spacing: 0.5px;
+					@media screen and (max-width: 800px) {
+						font-size: 16px;
+						padding: 12rem 0 0rem 0;
+					}				
 			}
 
 			.name {
@@ -739,8 +806,7 @@ a.slide_btn {
 		text-align: center;
 		
 			@media screen and (max-width: 700px) {
-				grid-template-columns: 1fr;
-				grid-gap: 0;
+				display: block;
 			}
 	}
 
@@ -753,27 +819,47 @@ a.slide_btn {
 
 	.name {
 		grid-column: 1;
-     		grid-row: row;
+		grid-row: row;
+
+			@media screen and (max-width: 700px) {
+				margin: 1rem auto;
+			}
 	}
 
 	.mail {
 		grid-column: 3 / 4;
-     		grid-row: row;
+		grid-row: row;
+
+			@media screen and (max-width: 700px) {
+				margin: 1rem auto;
+			}
 	}
 
 	.title {
-     		grid-row: row 2;
-     		grid-column: 1 / 4;
+ 		grid-row: row 2;
+ 		grid-column: 1 / 4;
+
+ 			@media screen and (max-width: 700px) {
+				margin: 1rem auto;
+			}
     }
 
 	.textarea {
-     		grid-row: 3 / 4;
-     		grid-column: 1 / 4;
+ 		grid-row: 3 / 4;
+ 		grid-column: 1 / 4;
+
+ 			@media screen and (max-width: 700px) {
+				margin: 1rem auto;
+			}
 	}
 
 	.form-control-text {
 		height: 100px;
 		width: 600px;
+
+			@media screen and (max-width: 700px) {
+				width: 70%;
+			}
 	}
 
 	.form-control-text::placeholder {
@@ -782,11 +868,19 @@ a.slide_btn {
 
 	.form-control-title {
 		width: 600px;
+
+			@media screen and (max-width: 700px) {
+				width: 70%;
+			}
 	}
 
 	.form-control-name,
 	.form-control-mail {
 		width: 275px;
+
+			@media screen and (max-width: 700px) {
+				width: 70%;
+			}
 	}
 	
 

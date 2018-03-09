@@ -115,7 +115,7 @@ function moveProgressBar() {
     var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
     var getProgressWrapWidth = $('.progress-wrap').width();
     var progressTotal = getPercent * getProgressWrapWidth;
-    var animationLength = 3500;
+    var animationLength = 2000;
 
     // on page load, animate percentage bar to data percentage length
     // .stop() used to prevent animation queueing
@@ -130,7 +130,7 @@ function moveProgressBar1() {
     var getPercent1 = ($('.progress-wrap-1').data('progress-percent-1') / 100);
     var getProgressWrapWidth1 = $('.progress-wrap-1').width();
     var progressTotal1 = getPercent1 * getProgressWrapWidth1;
-    var animationLength1 = 3500;
+    var animationLength1 = 2000;
 
     // on page load, animate percentage bar to data percentage length
     // .stop() used to prevent animation queueing
@@ -147,7 +147,7 @@ function moveProgressBar2() {
     var getPercent2 = ($('.progress-wrap-2').data('progress-percent-2') / 100);
     var getProgressWrapWidth2 = $('.progress-wrap-2').width();
     var progressTotal2 = getPercent2 * getProgressWrapWidth2;
-    var animationLength2 = 3500;
+    var animationLength2 = 2000;
 
     // on page load, animate percentage bar to data percentage length
     // .stop() used to prevent animation queueing
