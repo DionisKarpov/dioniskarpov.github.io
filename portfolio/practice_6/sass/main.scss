@@ -680,6 +680,10 @@ main {
   right: 0;
   text-align: center;
   margin-top: -4rem;
+
+  	@media screen and (max-width: 800px) {
+		margin-top: -6rem;
+	}
 }
 
 a.slide_btn {
@@ -787,6 +791,10 @@ a.slide_btn {
 				@media screen and (max-width: 900px) {
 					max-width: 60%;
 				}
+			}
+
+			@media screen and (max-width: 500px) {
+				grid-template-columns: 1fr;
 			}
 	}
 

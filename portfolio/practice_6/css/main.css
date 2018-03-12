@@ -785,6 +785,12 @@ main .slide_buttons {
   margin-top: -4rem;
 }
 
+@media screen and (max-width: 800px) {
+  main .slide_buttons {
+    margin-top: -6rem;
+  }
+}
+
 main a.slide_btn {
   color: #474544;
   font-size: 42px;
@@ -888,6 +894,12 @@ main .clients img {
 @media screen and (max-width: 900px) {
   main .clients img {
     max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .clients {
+    grid-template-columns: 1fr;
   }
 }
 
