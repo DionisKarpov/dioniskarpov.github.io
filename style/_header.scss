@@ -1,0 +1,242 @@
+header {
+background: linear-gradient(to bottom left, #226d99, #55ee77);
+background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+margin: 0 auto;
+overflow: hidden;
+background-size: cover;
+box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.2);
+
+@media screen and (max-width: 768px) {
+	height: 450px;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	color: $gray;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	will-change: transform;
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
+
+	.contacts {
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+
+	.mail,
+	.phone {
+		.phone-mail-link {
+			text-decoration: none;
+			color: $gray;
+			font-size: 20px;
+
+			@media screen and (max-width: 800px) {
+				font-size: 16px;
+			}
+
+			&:hover {
+				color: darken($gray, 30%);
+				text-shadow: 0 0 1px darken($gray, 5%);
+			}
+		}
+	}
+	}
+
+	.photo {
+	text-align: center;
+	line-height: 0.5rem;
+	padding: 3rem 0;
+
+	@media screen and (max-width: 768px) {
+		padding: 2rem 0;
+	}
+
+		.avatar {
+		text-align: center;
+		width: 120px;
+		height: 120px;
+		border-radius: 120px;
+		overflow:hidden;
+		margin: 0 auto;
+			
+			.child {
+			background-image: url('../images/dionis-karpov-1.jpg');
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			transition: .5s;
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+
+
+	.github-hide {
+		display: none;
+		margin: 0 0 1rem 0;
+		
+		#GitHub-Hide {
+			width: 80px;
+			height: 25px;
+			margin: 0;
+			transition: 0s!important;
+
+			&:hover {
+				fill: #6e5494;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	.phone {
+		margin: 1.5rem 0 -3rem 0;
+	}
+
+	.mail {
+		margin: 1.5rem 0 0 0;
+	}
+	.mail-mobile,
+	.phone-mobile {
+		display: none;
+		
+		.phone-mail-link {
+		text-decoration: none;
+		color: $gray;
+		font-size: 20px;
+			@media screen and (max-width: 768px) {
+				font-size: 16px;
+			}
+		&:hover {
+			color: darken($gray, 30%);
+			text-shadow: 0 0 1px darken($gray, 5%);
+		}
+		}
+
+		@media screen and (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	img {
+		width: 120px;
+		border-radius: 120px;
+		border: 1px solid $mid-gray;
+	}
+
+	h4 {
+		font-size: 1rem;
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			padding: 0 0.5rem;
+		}
+
+		#LinkedIn {
+			width: 40px;
+			height: 40px;
+			transition: 0s!important;
+			&:hover {
+				fill: #0077B5;
+			}
+			@media screen and (max-width: 768px) {
+				width: 25px;
+			}
+		}
+
+		#Facebook {
+			width: 40px;
+			height: 40px;
+			transition: 0s!important;
+			&:hover {
+				fill: #4267b2;
+			}
+			@media screen and (max-width: 768px) {
+				width: 25px;
+			}
+		}
+
+		#Instagram {
+			width: 40px;
+			height: 40px;
+			transition: 0s!important;
+			&:hover {
+				fill: url(#MyGradient);
+			}
+			@media screen and (max-width: 768px) {
+				width: 27px;
+			}
+		}
+
+		#Youtube {
+			width: 45px;
+			height: 45px;
+			transition: 0s!important;
+			&:hover {
+				fill: #ff0000;
+			}
+			@media screen and (max-width: 768px) {
+				width: 30px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+		margin: -1rem 0 0rem 0;
+		}
+	}
+	}
+}
+
+.social {
+	h2 {
+	text-align: center;
+	}
+}
+
+.portfolio {
+	h2, h3 {
+		text-align: center;
+	}
+
+	#GitHub {
+		width: 200px;
+		height: 60px;
+		transition: 0s!important;
+			
+		&:hover {
+			fill: #6e5494;
+		}
+
+		@media screen and (max-width: 800px) {
+			width: 130px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		h2, h3, #GitHub {
+			display: none;
+		}
+	}
+
+}
+}

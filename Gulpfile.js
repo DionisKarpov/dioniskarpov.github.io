@@ -5,10 +5,10 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
     browserSync  = require('browser-sync');
     reload       = browserSync.reload;
-    paths        = {html:['./index.html'], css:['./sass/main.scss']};
+    paths        = {html:['./index.html'], css:['./style/style.scss']};
 
 gulp.task('sass', function () {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./style/**/*.scss')
 
         .pipe(sourcemaps.init())
 
@@ -21,7 +21,7 @@ gulp.task('sass', function () {
 
         .pipe(sourcemaps.write(''))
 
-        .pipe(gulp.dest('./css'))
+        .pipe(gulp.dest('./style'))
 
         .pipe(reload({stream:true}));
 
@@ -33,7 +33,7 @@ gulp.task('html', function(){
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./sass/**', ['sass']);
+    gulp.watch('./style/**', ['sass']);
     gulp.watch(paths.html, ['html']);
 });
 
