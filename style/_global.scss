@@ -106,38 +106,32 @@ border: 1px solid $light-gray;
 padding: 1rem 2rem;
 
 .main-ul {
-
 	li {
-	a {
-		text-decoration: none;
-		color: $green;
-	}
+		a {
+			text-decoration: none;
+			color: $green;
+		}
 	}
 
 	h3 {
-	a {
-		text-decoration: none;
-		color: $green;
-		font-weight: 400;
-
-		&:hover {
-		color: darken($green, 10%);
-		text-shadow: 0 0 2px lighten($green, 30%);
+		a {
+			text-decoration: none;
+			color: $green;
+			font-weight: 400;
 		}
 	}
-	}
 
-	.dates-work {
+.dates-work {
 	font-size: 14px;
 	margin-top: -1rem;
 	color: $mid-gray;
-	}
+}
 
-	.position {
+.position {
 	margin-top: -0.7rem;
-	}
+}
 
-	hr {
+hr {
 	display: none;
 	color: $light-gray;
 	height: 1px;
@@ -145,11 +139,12 @@ padding: 1rem 2rem;
 	margin: 1rem auto;
 	background-color: $light-gray;
 	border: none;
+		
 		@media screen and (max-width: 800px) {
-		display: block;
+			display: block;
 		}
 
-	}
+}
 
 	@media screen and (max-width: 1148px) {
 	#line-1,
@@ -276,7 +271,9 @@ padding: 1rem 2rem;
 		margin-bottom: -1rem;
 		border: 1px solid $light-gray;
 	}
+}
 
+._link-hover {
 	&:hover {
 		color: darken($green, 10%);
 		text-shadow: 0 0 2px lighten($green, 30%);

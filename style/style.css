@@ -108,11 +108,6 @@ main {
   font-weight: 400;
 }
 
-.experience .main-ul h3 a:hover {
-  color: #158586;
-  text-shadow: 0 0 2px #7deaea;
-}
-
 .experience .main-ul .dates-work {
   font-size: 14px;
   margin-top: -1rem;
@@ -266,7 +261,7 @@ main {
   border: 1px solid #ccc;
 }
 
-.markups-link:hover {
+._link-hover:hover {
   color: #158586;
   text-shadow: 0 0 2px #7deaea;
 }
@@ -284,12 +279,6 @@ header {
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    height: 450px;
-  }
-}
-
 header .info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -302,6 +291,8 @@ header .info {
   top: 0px;
   left: 0px;
   will-change: transform;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -535,6 +526,10 @@ header .info .photo ul #Youtube:hover {
 }
 
 header .social h2 {
+  text-align: center;
+}
+
+header .portfolio {
   text-align: center;
 }
 
