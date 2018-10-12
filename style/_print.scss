@@ -1,0 +1,60 @@
+@media print {
+
+	main {
+		max-width: 100%;
+	}
+
+	header {
+		background: transparent;
+		box-shadow: none;
+	}
+
+	header .info {
+		grid-template-columns: 3fr;
+		max-width: 100%;
+	}
+
+	.contacts {
+		text-align: center;
+	}
+
+	header .info .photo {
+		padding: 0;
+	}
+
+	header .info .photo ul {
+		display: none;
+	}
+
+	.avatar,
+	.portfolio {
+		display: none;
+	}
+
+	.container,
+	.full-container {
+		grid-template-columns: 1fr;
+		page-break-after: always;
+	}
+
+	.markups-list {
+		grid-template-columns: 1fr 1fr 1fr;
+
+		.markups-li {
+			page-break-after: always;
+		}
+	}
+
+	.introduce,
+	.education,
+	.skills,
+	.experience,
+	.full-container {
+		border: none;
+		padding: 0;
+	}
+
+	.full-container .hobbies .hobbies-list {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
