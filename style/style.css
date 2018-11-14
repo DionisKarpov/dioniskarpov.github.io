@@ -570,7 +570,7 @@ header .portfolio #GitHub:hover {
     box-shadow: none;
   }
   header .info {
-    grid-template-columns: 3fr;
+    grid-template-columns: 1fr;
     max-width: 100%;
   }
   .contacts {
@@ -578,6 +578,7 @@ header .portfolio #GitHub:hover {
   }
   header .info .photo {
     padding: 0;
+    grid-row: 1;
   }
   header .info .photo ul {
     display: none;
