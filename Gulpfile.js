@@ -15,7 +15,7 @@ gulp.task('sass', function () {
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
 
@@ -33,8 +33,8 @@ gulp.task('html', function(){
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./style/**', ['sass']);
-    gulp.watch(paths.html, ['html']);
+    gulp.watch('./style/**', gulp.series('sass'));
+    gulp.watch(paths.html, gulp.series('html'));
 });
 
 gulp.task('browserSync', function() {
@@ -48,4 +48,4 @@ gulp.task('browserSync', function() {
   });
 });
 
-gulp.task('default', ['sass','watch','browserSync']);
+gulp.task('default', gulp.series('sass','watch','browserSync'));
