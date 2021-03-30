@@ -36,6 +36,8 @@
 	.full-container {
 		grid-template-columns: 1fr;
 		page-break-after: always;
+		margin-bottom: -16px;
+		padding-bottom: 0;
 	}
 
 	.markups-list {
@@ -44,6 +46,16 @@
 		.markups-li {
 			page-break-after: always;
 		}
+	}
+
+	.introduce,
+	.skills,
+	.experience {
+		margin-top: -48px;
+	}
+
+	.skills {
+		margin-top: -48px;
 	}
 
 	.introduce,
