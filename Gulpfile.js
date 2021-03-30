@@ -35,6 +35,15 @@ gulp.task('html', function(){
 gulp.task('watch', function(){
     gulp.watch('./style/**', gulp.series('sass'));
     gulp.watch(paths.html, gulp.series('html'));
+    
+    browserSync({
+      server: {
+        baseDir: "./"
+      },
+      port: 8080,
+      open: true,
+      notify: false
+    });
 });
 
 gulp.task('browserSync', function() {

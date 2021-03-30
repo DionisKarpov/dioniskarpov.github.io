@@ -116,12 +116,12 @@ header {
 									content: "";
 									height: 1px;
 									width: 0%;
-									background-color: $green;
+									background-color: $blue;
 									transition: .1s ease-in-out;
 								}
 
 								&:hover {
-								 color: $green;
+								 color: $blue;
 
 								&:after {
 									width: 100%;
@@ -582,7 +582,7 @@ footer {
 			text-decoration: none;
 			color: $white;
 				&:hover {
-					color: $green;
+					color: $blue;
 				}
 		}
 

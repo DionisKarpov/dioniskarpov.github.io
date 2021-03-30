@@ -9,8 +9,8 @@ margin: 0 auto;
 }
 
 main {
-max-width: 90%;
-margin: 0 auto;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 .container {
@@ -109,15 +109,15 @@ padding: 1rem 2rem;
 	li {
 		a {
 			text-decoration: none;
-			color: $green;
+			color: $blue;
 		}
 	}
 
 	h3 {
 		a {
 			text-decoration: none;
-			color: $green;
-			font-weight: 400;
+			color: $blue;
+			font-weight: 500;
 		}
 	}
 
@@ -179,9 +179,9 @@ hr {
 }
 
 .full-container {
-margin: 3rem auto;
-border: 1px solid $light-gray;
-padding: 1rem 2rem;
+	margin: 3rem auto;
+	border: 1px solid $light-gray;
+	padding: 1rem 2rem;
 
 	.hobbies {
 		
@@ -285,4 +285,8 @@ padding: 1rem 2rem;
 	margin-bottom: 2rem;
 	background: #ccc;
 	border: none;
+}
+
+.mb--48 {
+	margin-bottom: 48px;
 }

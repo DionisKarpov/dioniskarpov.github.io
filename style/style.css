@@ -104,13 +104,13 @@ main {
 
 .experience .main-ul li a {
   text-decoration: none;
-  color: #1CB1B2;
+  color: #226d99;
 }
 
 .experience .main-ul h3 a {
   text-decoration: none;
-  color: #1CB1B2;
-  font-weight: 400;
+  color: #226d99;
+  font-weight: 500;
 }
 
 .experience .main-ul .dates-work {
@@ -276,6 +276,10 @@ main {
   margin-bottom: 2rem;
   background: #ccc;
   border: none;
+}
+
+.mb--48 {
+  margin-bottom: 48px;
 }
 
 header {
